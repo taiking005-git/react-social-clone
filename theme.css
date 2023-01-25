@@ -1,0 +1,160 @@
+.theme-container {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  place-items: center;
+  display: none;
+}
+
+.theme-container .card {
+  height: max-content;
+  width: 50%;
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  box-shadow: 0 0 2rem var(--color-primary);
+  z-index: 1100;
+  position: fixed;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 3rem;
+}
+/* ============================================ FONT SIZE ===================================== */
+.theme-container .card .font {
+  margin-top: 2rem;
+}
+.theme-container .card .font h4 {
+  margin-bottom: 0.4rem;
+}
+.theme-container .font .size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+}
+
+.theme-container .card .size .choose-size {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 1rem;
+}
+
+.theme-container .size .choose-size::before {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  align-self: center;
+  background-color: var(--color-secondary);
+  z-index: 100;
+}
+
+.theme-container .size .choose-size span {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  z-index: 110;
+  cursor: pointer;
+}
+
+.theme-container .size .choose-size span.active {
+  background-color: var(--color-primary);
+}
+/* ============================================ COLOR ===================================== */
+.theme-container .color {
+  margin-top: 2rem;
+}
+.theme-container .color h4 {
+  margin-bottom: 0.4rem;
+}
+.theme-container .color .choose-color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+}
+
+.theme-container .color .choose-color span {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: var(--color-gray);
+  cursor: pointer;
+}
+.theme-container .color .choose-color span.active {
+  border: 3px solid var(--color-gray);
+}
+.theme-container .color .choose-color .color-1 {
+  background: hsl(252, 75%, 60%);
+}
+.theme-container .color .choose-color .color-2 {
+  background: hsl(52, 75%, 60%);
+}
+.theme-container .color .choose-color .color-3 {
+  background: hsl(352, 75%, 60%);
+}
+.theme-container .color .choose-color .color-4 {
+  background: hsl(152, 75%, 60%);
+}
+.theme-container .color .choose-color .color-5 {
+  background: hsl(230, 75%, 60%);
+}
+/* ============================================ BACKGROUND ===================================== */
+.theme-container .background {
+  margin-top: 2rem;
+}
+
+.theme-container .background .choose-background {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.theme-container .background .choose-background > div {
+  height: 4rem;
+  width: 100%;
+  border-radius: 5px;
+  padding: var(--card-padding);
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--color-gray);
+}
+
+.theme-container .background .choose-background div:nth-child(1) {
+  background-color: hsl(252, 30%, 100%);
+  color: var(--color-black);
+}
+.theme-container .background .choose-background div:nth-child(2) {
+  background-color: hsl(252, 30%, 15%);
+  color: hsl(252, 60%, 100%);
+}
+.theme-container .background .choose-background div:nth-child(3) {
+  background-color: hsl(252, 30%, 0%);
+  color: hsl(252, 60%, 100%);
+}
+
+.theme-container .background .choose-background > div span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--color-gray);
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.theme-container .background .choose-background > div span.active {
+  background-color: var(--color-primary);
+}
