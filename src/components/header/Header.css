@@ -1,0 +1,43 @@
+/* ================= Nav Bar ==================== */
+
+.header {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 0.7em 0;
+  position: fixed;
+  z-index: 10;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: var(--search-padding);
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.search-wrapper input[type="search"] {
+  background-color: transparent;
+  width: 90%;
+  margin-left: 1rem;
+  color: var(--color-dark);
+}
+
+.search-wrapper input[type="search"]::placeholder {
+  color: var(--color-gray);
+}
+
+.create {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}

@@ -1,0 +1,12 @@
+/* =============Main ======================== */
+main {
+  position: relative;
+  top: 5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 15vw auto 20vw;
+  position: relative;
+  gap: 2rem;
+}
