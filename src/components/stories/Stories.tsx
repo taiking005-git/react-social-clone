@@ -8,17 +8,38 @@ const Stories = () => {
     <ul className="stories">
       <li className="story">
         <img src={stories1} alt="" className="stories-img" />
-        <div className="profile-picture">
-          <img src={profileImg1} alt="" />
+        <div className="profile-info">
+          <img src={profileImg1} alt="" className="profile-img" />
+          <p className="name">Your story</p>
         </div>
-        <p className="name">Your story</p>
       </li>
       <li className="story">
         <img src={stories1} alt="" className="stories-img" />
-        <div className="profile-picture">
-          <img src={profileImg8} alt="" />
+        <div className="profile-info">
+          <img src={profileImg8} alt="" className="profile-img" />
+          <p className="name">Your story</p>
         </div>
-        <p className="name">Jolie Jacob</p>
+      </li>
+      <li className="story">
+        <img src={stories1} alt="" className="stories-img" />
+        <div className="profile-info">
+          <img src={profileImg1} alt="" className="profile-img" />
+          <p className="name">John Teller</p>
+        </div>
+      </li>
+      <li className="story">
+        <img src={stories1} alt="" className="stories-img" />
+        <div className="profile-info">
+          <img src={profileImg1} alt="" className="profile-img" />
+          <p className="name">Raheem Ty</p>
+        </div>
+      </li>
+      <li className="story">
+        <img src={stories1} alt="" className="stories-img" />
+        <div className="profile-info">
+          <img src={profileImg8} alt="" className="profile-img" />
+          <p className="name">Janet Jeo</p>
+        </div>
       </li>
     </ul>
   );

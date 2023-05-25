@@ -17,12 +17,14 @@
   box-shadow: var(--hover-box-shadow);
 }
 
+.navWrapper {
+  position: relative;
+}
 .sidebar {
   margin-top: 1rem;
   background: var(--color-white);
   border-radius: var(--card-border-radius);
-  /* overflow: hidden; */
-
+  overflow: hidden;
   /* box-shadow: var(--box-shadow-color); */
 }
 
