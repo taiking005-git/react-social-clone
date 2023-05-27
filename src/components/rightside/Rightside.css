@@ -1,0 +1,9 @@
+/* =========================right ============================== */
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: sticky;
+  height: max-content;
+  top: var(--sticky-top-right);
+}

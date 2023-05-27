@@ -1,9 +1,9 @@
 import Home from "../../pages/home/Home";
 
-export const Maincontent = () => {
+export const Maincontent = ({ user }) => {
   return (
-    <div>
-      <Home />
-    </div>
+    <>
+      <Home user={user} />
+    </>
   );
 };

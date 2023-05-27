@@ -1,0 +1,41 @@
+/* ==================== FRIENDS REQUEST ========================== */
+.right .friend-request {
+  width: 100%;
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  /* box-shadow: var(--box-shadow-color); */
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+.right .friend-request:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+
+.right .friend-request .request {
+  margin-bottom: 1rem;
+}
+.right .friend-request .request:last-child {
+  margin-bottom: 0;
+}
+
+.right .friend-request .request .info {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.right .friend-request .request .info p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.right .friend-request .request .profile-picture img {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.right .friend-request .action-button {
+  display: flex;
+  justify-content: space-between;
+}

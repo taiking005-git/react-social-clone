@@ -1,12 +1,19 @@
 /* =============Main ======================== */
 main {
   position: relative;
-  top: 5rem;
+  top: var(--sticky-top-left);
 }
 
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: 15vw auto 20vw;
-  position: relative;
   gap: 2rem;
+}
+
+.navbar {
+  height: 100%;
+  position: sticky;
+  top: var(--sticky-top-left);
+  background-color: red;
 }

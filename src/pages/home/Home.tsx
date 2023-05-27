@@ -1,11 +1,18 @@
+import Createpost from "../../components/createpost/Createpost";
+import Feeds from "../../components/feeds/Feeds";
 import Stories from "../../components/stories/Stories";
-import Createcard from "../../components/ui/Createcard";
-const Home = () => {
+
+const Home = ({ user }) => {
   return (
-    <div>
+    <>
       <Stories />
-      <Createcard />
-    </div>
+      <Createpost />
+      <Feeds />
+      <Feeds />
+      <Feeds />
+      <Feeds />
+      <Feeds />
+    </>
   );
 };
 

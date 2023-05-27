@@ -1,22 +1,24 @@
 import "./Notification.css";
-import profileImg1 from "../../assets/images/profile-4.jpg";
-import profileImg2 from "../../assets/images/profile-5.jpg";
+// import profileImg1 from "../../assets/images/profile-4.jpg";
+// import profileImg2 from "../../assets/images/profile-5.jpg";
 import { useEffect } from "react";
 
 export const Notification = ({ showNotification }) => {
+  const notificationPopup = document.getElementById("notification-popup");
   useEffect(() => {
-    if (showNotification) {
-      document.getElementById("notification-popup").style.display = "flex";
+    if (showNotification && notificationPopup) {
+      notificationPopup.style.display = "flex";
     } else {
-      document.getElementById("notification-popup").style.display = "none";
+      notificationPopup ? (notificationPopup.style.display = "none") : "";
     }
-  }, [showNotification]);
+  });
+
   return (
     <div className="notification-popup" id="notification-popup">
       <ul className="notification-list">
         <li className="notification-item">
           <div className="profile-picture">
-            <img src={profileImg1} alt="" />
+            <img src={""} alt="" />
           </div>
           <div className="notification-body">
             <b className="userName">Benjamin, Meddy</b> accepted your friend
@@ -26,7 +28,7 @@ export const Notification = ({ showNotification }) => {
         </li>
         <li className="notification-item">
           <div className="profile-picture">
-            <img src={profileImg2} alt="" />
+            <img src={""} alt="" />
           </div>
           <div className="notification-body">
             <b className="userName">Benjamin, Meddy</b> accepted your friend
@@ -36,7 +38,7 @@ export const Notification = ({ showNotification }) => {
         </li>
         <li className="notification-item">
           <div className="profile-picture">
-            <img src={profileImg1} alt="" />
+            <img src={""} alt="" />
           </div>
           <div className="notification-body">
             <b className="userName">Benjamin, Meddy</b> accepted your friend
@@ -46,7 +48,7 @@ export const Notification = ({ showNotification }) => {
         </li>
         <li className="notification-item">
           <div className="profile-picture">
-            <img src={profileImg1} alt="" />
+            <img src={""} alt="" />
           </div>
           <div className="notification-body">
             <b className="userName">Benjamin, Meddy</b> accepted your friend

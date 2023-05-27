@@ -1,0 +1,58 @@
+[
+    {
+        "_id": 0,
+        "photo": "./images/feed-1.jpg",
+        "desc": "Good days are here",
+        "date": " 53 mins ago",
+        "userId": 0,
+        "reactionCount": 7,
+        "shareCount": 344,
+        "commentCount": 200
+    },
+    {
+        "_id": 1,
+        "desc": "Great things are happening",
+        "photo": "./images/feed-7.jpg",
+        "date": "5 mins ago",
+        "userId": 5,
+        "reactionCount": 25,
+        " shareCount": 300,
+        "commentCount": 230
+    },
+    {
+        "_id": 2,
+        "photo": "./images/feed-3.jpg",
+        "date": "15 mins ago",
+        "userId": 5,
+        "reactionCount": 250,
+        "shareCount": 30,
+        "commentCount": 35
+    },
+    {
+        "_id": 3,
+        "photo": "./images/feed-4.jpg",
+        "date": "27 mins ago",
+        "userId": 3,
+        "reactionCount": 5,
+        "shareCount": 10,
+        "commentCount": 20
+    },
+    {
+        "_id": 4,
+        "photo": "./images/feed-6.jpg",
+        "date": "35 mins ago",
+        "userId": 4,
+        "reactionCount": 37,
+        "shareCount": 33,
+        "commentCount": 2
+    },
+    {
+        "_id": 5,
+        "photo": "./images/feed-2.jpg",
+        "date": "2 mins ago",
+        "userId": 2,
+        "reactionCount": 17,
+        "shareCount": 56,
+        "commentCount": 32
+    }
+]

@@ -124,29 +124,20 @@ img {
     gap: 1rem;
   }
 
-  main .container .left-side {
-    width: 5rem;
-    z-index: 5;
-  }
-
-  main .container .left-side .profile,
-  .sidebar .menu-item h3 {
-    display: none;
-  }
-  .left-side .sidebar {
-    margin-top: 0;
-  }
-
-  .left-side .sidebar .menu-item i {
-    margin-left: 2.5rem;
-  }
-
-  .left-side .btn {
-    display: none;
-  }
-
   .theme-container .card {
     width: 80vw;
+  }
+
+  .profile {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile,
+  .sidebar .menu-item h3 {
+    display: none;
   }
 }
 
@@ -160,25 +151,28 @@ img {
     gap: 0;
   }
 
-  main .container .left-side {
+  main .container .sidebar {
     grid-column: 3/4;
     position: fixed;
     bottom: 0;
     right: 0;
-    top: 10rem;
+    /* top: 10rem; */
+    width: 10%;
+    overflow: visible;
   }
 
   /* -------------- NOTIFICATION POPUP ============== */
-  .left-side .notification-popup {
+  .sidebar .notification-popup {
     position: absolute;
-    left: -20rem;
-    width: 20rem;
+    left: -31rem;
+    width: 30rem;
+    top: 6rem;
   }
 
-  .left-side .notification-popup::before {
+  .sidebar .notification-popup::before {
     display: block;
     top: 1.3rem;
-    left: calc(20rem - 0.6rem);
+    left: calc(30rem - 0.6rem);
     position: absolute;
   }
 
@@ -209,7 +203,37 @@ img {
   body {
     font-size: 1rem;
   }
-  main .container .left-side {
+
+  main .container {
+    grid-template-columns: auto;
+  }
+
+  main .container .sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    overflow: visible;
+    margin-left: 0;
+    border-radius: 1rem 1rem 0 0;
+  }
+  main .container .sidebar a:nth-child(4),
+  main .container .sidebar a:nth-child(5),
+  main .container .sidebar a:nth-child(7),
+  main .container .sidebar a:nth-child(6) {
+    display: none;
+  }
+
+  .sidebar .active::before {
+    content: " ";
+    display: none;
+  }
+
+  .sidebar.btn {
+    display: none;
   }
 }

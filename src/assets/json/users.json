@@ -1,0 +1,38 @@
+[
+    {
+        "userId": 0,
+        "userName": "Johnson Simeon",
+        "userImg": "./images/profile-1.jpg",
+        "isOnline": true
+    },
+    {
+        "userId": 1,
+        "userName": "Andy Goody",
+        "userImg": "./images/profile-2.jpg",
+        "isOnline": true
+    },
+    {
+        "userId": 2,
+        "userName": "Williams Smith",
+        "userImg": "./images/profile-3.jpg",
+        "isOnline": false
+    },
+    {
+        "userId": 3,
+        "userName": "Jody James",
+        "userImg": "./images/profile-4.jpg",
+        "isOnline": true
+    },
+    {
+        "userId": 4,
+        "userName": "Micheal Jordan",
+        "userImg": "./images/profile-5.jpg",
+        "isOnline": false
+    },
+    {
+        "userId": 5,
+        "userName": "Stephen George",
+        "userImg": "./images/profile-6.jpg",
+        "isOnline": true
+    }
+]
