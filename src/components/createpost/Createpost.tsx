@@ -1,16 +1,16 @@
+import { UserProps } from "../../../model";
 import "./Createpost.css";
-// import profileImg from "../../assets/images/profile-1.jpg";
 
-const Createpost = () => {
+const Createpost = ({ user }: UserProps) => {
   return (
     <div>
       <form className="create-post">
         <div className="profile-picture">
-          <img src={"profileImg"} alt="" />
+          <img src={user.userImg} alt={user.userName} />
         </div>
         <input
           type="text"
-          placeholder="What's on your mind, Diana"
+          placeholder={"What's on your mind, " + user.userName}
           id="create-post"
         />
         <input type="submit" value="Post" className="btn btn-primary" />

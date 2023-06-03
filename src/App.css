@@ -12,8 +12,8 @@ main {
 }
 
 .navbar {
-  height: 100%;
   position: sticky;
+  height: max-content;
   top: var(--sticky-top-left);
-  background-color: red;
+  /* background-color: red; */
 }

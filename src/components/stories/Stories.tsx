@@ -1,46 +1,42 @@
 import "./Stories.css";
-// import profileImg1 from "../../assets/images/profile-1.jpg";
-// import profileImg8 from "../../assets/images/profile-8.jpg";
-// import stories1 from "../../assets/images/story-1.jpg";
+import Storieslist from "./../storieslist/Storieslist";
+import { StoriesProps, UserProps, UsersProps } from "../../../model";
 
-const Stories = () => {
+const Stories: React.FC<UsersProps & StoriesProps & UserProps> = ({
+  usersData,
+  storiesData,
+  user,
+}) => {
   return (
     <ul className="stories">
-      <li className="story">
-        <img src={""} alt="" className="stories-img" />
+      {/* <li className="story">
+        <img
+          src={
+            storiesData.find((story) => story.userId === user.userId)?.storyImg
+          }
+          alt=""
+          className="stories-img"
+        />
         <div className="profile-info">
-          <img src={""} alt="" className="profile-img" />
+          <img
+            src={usersData.find((u) => u.userId === user.userId)?.userImg}
+            alt=""
+            className="profile-img"
+          />
           <p className="name">Your story</p>
         </div>
-      </li>
-      <li className="story">
-        <img src={""} alt="" className="stories-img" />
-        <div className="profile-info">
-          <img src={""} alt="" className="profile-img" />
-          <p className="name">Your story</p>
-        </div>
-      </li>
-      <li className="story">
-        <img src={""} alt="" className="stories-img" />
-        <div className="profile-info">
-          <img src={""} alt="" className="profile-img" />
-          <p className="name">John Teller</p>
-        </div>
-      </li>
-      <li className="story">
-        <img src={""} alt="" className="stories-img" />
-        <div className="profile-info">
-          <img src={""} alt="" className="profile-img" />
-          <p className="name">Raheem Ty</p>
-        </div>
-      </li>
-      <li className="story">
-        <img src={""} alt="" className="stories-img" />
-        <div className="profile-info">
-          <img src={""} alt="" className="profile-img" />
-          <p className="name">Janet Jeo</p>
-        </div>
-      </li>
+      </li> */}
+      {storiesData.map(
+        (story) =>
+          story.userId !== user.userId && (
+            <Storieslist
+              key={story._id}
+              storiesData={storiesData}
+              usersData={usersData}
+              story={story}
+            />
+          )
+      )}
     </ul>
   );
 };

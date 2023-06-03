@@ -1,17 +1,9 @@
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-interface UsersData {
-  userId: number;
-  userName: string;
-  userImg: string;
-  isOnline: boolean;
-}
-interface UserProps {
-  user: UsersData;
-}
-export const Header: React.FC<UserProps> = ({ user }) => {
-  console.log(user);
+import { UserProps } from "../../../model";
+
+export const Header = ({ user }: UserProps) => {
   return (
     <div className="header">
       <div className="wrapper container">

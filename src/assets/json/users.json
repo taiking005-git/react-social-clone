@@ -3,36 +3,84 @@
         "userId": 0,
         "userName": "Johnson Simeon",
         "userImg": "./images/profile-1.jpg",
+        "tag": "@johnson",
+        "friends": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
         "isOnline": true
     },
     {
         "userId": 1,
         "userName": "Andy Goody",
         "userImg": "./images/profile-2.jpg",
+        "tag": "@andy",
+        "friends": [
+            2,
+            0,
+            6
+        ],
         "isOnline": true
     },
     {
         "userId": 2,
         "userName": "Williams Smith",
         "userImg": "./images/profile-3.jpg",
+        "tag": "@williams",
+        "friends": [
+            0,
+            5
+        ],
         "isOnline": false
     },
     {
         "userId": 3,
         "userName": "Jody James",
         "userImg": "./images/profile-4.jpg",
+        "tag": "@jjames",
+        "friends": [
+            4
+        ],
         "isOnline": true
     },
     {
         "userId": 4,
         "userName": "Micheal Jordan",
         "userImg": "./images/profile-5.jpg",
+        "tag": "@michjor",
+        "friends": [
+            2,
+            3
+        ],
         "isOnline": false
     },
     {
         "userId": 5,
         "userName": "Stephen George",
         "userImg": "./images/profile-6.jpg",
+        "tag": "@steveg",
+        "friends": [
+            4,
+            0,
+            1,
+            3
+        ],
+        "isOnline": true
+    },
+    {
+        "userId": 6,
+        "userName": "Great George",
+        "userImg": "./images/profile-7.jpg",
+        "tag": "@steveg",
+        "friends": [
+            4,
+            0,
+            1,
+            3
+        ],
         "isOnline": true
     }
 ]

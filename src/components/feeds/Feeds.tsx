@@ -1,17 +1,21 @@
 import "./Feeds.css";
-// import profileImg1 from "../../assets/images/profile-1.jpg";
-// import feedImg from "../../assets/images/feed-3.jpg";
-// import likedbyImg from "../../assets/images/profile-11.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBookmark,
-  faComment,
-  faEllipsis,
-  faHeart,
-  faShareNodes,
-} from "@fortawesome/free-solid-svg-icons";
 
-const Feeds = () => {
+import { BiHeart } from "react-icons/bi";
+import {
+  HiOutlineBookmark,
+  HiOutlineChatAlt,
+  HiOutlineShare,
+} from "react-icons/hi";
+import Like from "../like/Like";
+import { PostProps, UsersProps } from "./../../../model";
+import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
+
+const handleLike = () => {
+  console.log("clicked");
+};
+
+const Feeds: React.FC<PostProps & UsersProps> = ({ post, usersData }) => {
   return (
     <div>
       {/* <!---------------------------- FEEDS  --------------------------> */}
@@ -21,11 +25,22 @@ const Feeds = () => {
           <div className="head">
             <div className="user">
               <div className="profile-picture">
-                <img src={"profileImg1"} alt="" />
+                <img
+                  src={
+                    usersData.find((data) => data.userId === post.userId)
+                      ?.userImg
+                  }
+                  alt=""
+                />
               </div>
               <div className="info">
-                <h3 className="userName">John Frank</h3>
-                <small className="text-muted">New York 15 Minutes ago</small>
+                <h3 className="userName">
+                  {
+                    usersData.find((data) => data.userId === post.userId)
+                      ?.userName
+                  }
+                </h3>
+                <small className="text-muted">{post.date}</small>
               </div>
             </div>
             <span>
@@ -33,45 +48,36 @@ const Feeds = () => {
             </span>
           </div>
           <div className="media">
-            <img src={"feedImg"} alt="" />
+            <img src={post.photo} alt="" />
           </div>
           <div className="interactions-button">
             <div className="action-button">
               <span>
-                <FontAwesomeIcon icon={faHeart} />
+                <BiHeart className="icon" />
               </span>
               <span>
-                <FontAwesomeIcon icon={faComment} />
+                <HiOutlineChatAlt />
               </span>
               <span>
-                <FontAwesomeIcon icon={faShareNodes} />
+                <HiOutlineShare />
               </span>
             </div>
             <div className="bookmark">
               <span>
-                <FontAwesomeIcon icon={faBookmark} />
+                <HiOutlineBookmark />
               </span>
             </div>
           </div>
-          <div className="likedby">
-            <span>
-              <img src={"likedbyImg"} alt="" />
-            </span>
-            <span>
-              <img src={"likedbyImg"} alt="" />
-            </span>
-            <span>
-              <img src={"likedbyImg"} alt="" />
-            </span>
-            <p>
-              Liked by <b className="userName">Adenike Jones</b> and
-              <b> 2,334 Others</b>
-            </p>
-          </div>
+          <Like likeArray={post.likes} usersData={usersData} />
           <div className="caption">
             <p>
-              <b className="userName">Johnson Simeon</b> Lorem ipsum, dolor sit
-              amet
+              <b className="userName">
+                {
+                  usersData.find((data) => data.userId === post.userId)
+                    ?.userName
+                }
+              </b>{" "}
+              {post.desc}
               <span className="harsh-tag">#freestyle</span>
             </p>
           </div>

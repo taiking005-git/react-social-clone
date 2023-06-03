@@ -1,0 +1,17 @@
+.profile {
+  display: flex;
+  align-items: center;
+  padding: var(--card-padding);
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  width: 100%;
+  column-gap: 1rem;
+  /* box-shadow: var(--box-shadow-color); */
+}
+.profile:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+
+.profile h3 {
+  line-height: 1em;
+}

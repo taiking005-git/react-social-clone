@@ -1,0 +1,125 @@
+{
+    "users": [
+        {
+            "userId": 0,
+            "userName": "Johnson Simeon",
+            "userImg": "./images/profile-1.jpg",
+            "tag": "@johnson",
+            "friends": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "isOnline": true
+        },
+        {
+            "userId": 1,
+            "userName": "Andy Goody",
+            "userImg": "./images/profile-2.jpg",
+            "tag": "@andy",
+            "friends": [
+                2,
+                0,
+                6
+            ],
+            "isOnline": true
+        },
+        {
+            "userId": 2,
+            "userName": "Williams Smith",
+            "userImg": "./images/profile-3.jpg",
+            "tag": "@williams",
+            "friends": [
+                0,
+                5
+            ],
+            "isOnline": false
+        },
+        {
+            "userId": 3,
+            "userName": "Jody James",
+            "userImg": "./images/profile-4.jpg",
+            "tag": "@jjames",
+            "friends": [
+                4
+            ],
+            "isOnline": true
+        },
+        {
+            "userId": 4,
+            "userName": "Micheal Jordan",
+            "userImg": "./images/profile-5.jpg",
+            "tag": "@michjor",
+            "friends": [
+                2,
+                3
+            ],
+            "isOnline": false
+        },
+        {
+            "userId": 5,
+            "userName": "Stephen George",
+            "userImg": "./images/profile-6.jpg",
+            "tag": "@steveg",
+            "friends": [
+                4,
+                0,
+                1,
+                3
+            ],
+            "isOnline": true
+        },
+        {
+            "userId": 6,
+            "userName": "Great George",
+            "userImg": "./images/profile-7.jpg",
+            "tag": "@steveg",
+            "friends": [
+                4,
+                0,
+                1,
+                3
+            ],
+            "isOnline": true
+        }
+    ],
+    "stories": [
+        {
+            "_id": 0,
+            "userId": 1,
+            "storyImg": "/images/story-1.jpg"
+        },
+        {
+            "_id": 1,
+            "userId": 2,
+            "storyImg": "/images/story-2.jpg"
+        },
+        {
+            "_id": 2,
+            "userId": 3,
+            "storyImg": "/images/story-3.jpg"
+        },
+        {
+            "_id": 3,
+            "userId": 4,
+            "storyImg": "/images/story-4.jpg"
+        },
+        {
+            "_id": 4,
+            "userId": 1,
+            "storyImg": "/images/story-5.jpg"
+        },
+        {
+            "_id": 5,
+            "userId": 5,
+            "storyImg": "/images/story-6.jpg"
+        },
+        {
+            "_id": 6,
+            "userId": 6,
+            "storyImg": "/images/feed-7.jpg"
+        }
+    ]
+}

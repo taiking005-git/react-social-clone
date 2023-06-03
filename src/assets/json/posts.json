@@ -5,54 +5,86 @@
         "desc": "Good days are here",
         "date": " 53 mins ago",
         "userId": 0,
-        "reactionCount": 7,
-        "shareCount": 344,
+        "likes": [
+            5,
+            6
+        ],
+        "shares": [
+            5
+        ],
         "commentCount": 200
     },
     {
         "_id": 1,
-        "desc": "Great things are happening",
         "photo": "./images/feed-7.jpg",
+        "desc": "Great things are happening",
         "date": "5 mins ago",
         "userId": 5,
-        "reactionCount": 25,
-        " shareCount": 300,
+        "likes": [
+            3,
+            4,
+            2,
+            0,
+            1
+        ],
+        "shares": [
+            3,
+            2
+        ],
         "commentCount": 230
     },
     {
         "_id": 2,
         "photo": "./images/feed-3.jpg",
+        "desc": "",
         "date": "15 mins ago",
-        "userId": 5,
-        "reactionCount": 250,
-        "shareCount": 30,
+        "userId": 6,
+        "likes": [
+            2
+        ],
+        "shares": [],
         "commentCount": 35
     },
     {
         "_id": 3,
         "photo": "./images/feed-4.jpg",
+        "desc": "",
         "date": "27 mins ago",
         "userId": 3,
-        "reactionCount": 5,
-        "shareCount": 10,
+        "likes": [],
+        "shares": [
+            5
+        ],
         "commentCount": 20
     },
     {
         "_id": 4,
         "photo": "./images/feed-6.jpg",
+        "desc": "",
         "date": "35 mins ago",
         "userId": 4,
-        "reactionCount": 37,
-        "shareCount": 33,
+        "likes": [
+            0
+        ],
+        "shares": [
+            3,
+            0
+        ],
         "commentCount": 2
     },
     {
         "_id": 5,
         "photo": "./images/feed-2.jpg",
+        "desc": "",
         "date": "2 mins ago",
         "userId": 2,
-        "reactionCount": 17,
-        "shareCount": 56,
+        "likes": [
+            5,
+            2
+        ],
+        "shares": [
+            2
+        ],
         "commentCount": 32
     }
 ]

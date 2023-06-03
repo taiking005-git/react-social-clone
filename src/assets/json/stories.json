@@ -1,0 +1,37 @@
+[
+    {
+        "_id": 0,
+        "userId": 1,
+        "storyImg": "/images/story-1.jpg"
+    },
+    {
+        "_id": 1,
+        "userId": 2,
+        "storyImg": "/images/story-2.jpg"
+    },
+    {
+        "_id": 2,
+        "userId": 3,
+        "storyImg": "/images/story-3.jpg"
+    },
+    {
+        "_id": 3,
+        "userId": 4,
+        "storyImg": "/images/story-4.jpg"
+    },
+    {
+        "_id": 4,
+        "userId": 0,
+        "storyImg": "/images/story-5.jpg"
+    },
+    {
+        "_id": 5,
+        "userId": 5,
+        "storyImg": "/images/story-6.jpg"
+    },
+    {
+        "_id": 6,
+        "userId": 6,
+        "storyImg": "/images/feed-7.jpg"
+    }
+]

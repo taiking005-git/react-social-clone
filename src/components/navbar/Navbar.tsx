@@ -1,5 +1,4 @@
 import "./Navbar.css";
-// import profileImg from "../../assets/images/profile-1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
@@ -13,29 +12,32 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Notification } from "../Notification/Notification";
 import { useEffect, useState } from "react";
+import { UserProps } from "../../../model";
+import Profile from "../profile/Profile";
 
-export const Navbar = ({ user }) => {
+export const Navbar = ({ user }: UserProps) => {
   const [activeMenu, setActiveMenu] = useState(Number);
   const [showNotification, setShowNotification] = useState(false);
 
   useEffect(() => {
-    const notificationsCount = document.getElementById("notifications-count");
-    const messagesCount = document.getElementById("messages-count");
+    const notificationsCount = document.getElementById(
+      "notifications-count"
+    ) as HTMLElement;
+    const messagesCount = document.getElementById(
+      "messages-count"
+    ) as HTMLElement;
 
     const handleMenuClick = (index: number) => {
       setActiveMenu(index);
       if (index === 2) {
         setShowNotification(true);
         showNotification && setShowNotification(false);
-
-        notificationsCount !== null
-          ? (notificationsCount.style.display = "none")
-          : "";
+        notificationsCount ? (notificationsCount.style.display = "none") : "";
       } else {
         setShowNotification(false);
       }
       // Checked if the index of selected menu-item is the messages-count and hide the span
-      index === 3 && messagesCount !== null
+      index === 3 && messagesCount
         ? (messagesCount.style.display = "none")
         : "";
     };
@@ -47,15 +49,7 @@ export const Navbar = ({ user }) => {
   });
   return (
     <div className="navWrapper">
-      <a className="profile">
-        <div className="profile-picture">
-          <img src={user.userImg} alt="profile image" />
-        </div>
-        <div className="handle">
-          <h3 className="userName">Tai King</h3>
-          <p className="text-muted">@taiking</p>
-        </div>
-      </a>
+      <Profile user={user} />
       {/* <!-- ==================== SIDE BAR ======================== --> */}
       <div className="sidebar">
         <a className={`menu-item ${activeMenu === 0 ? "active" : ""}`}>
@@ -124,7 +118,7 @@ export const Navbar = ({ user }) => {
           <h3>Settings</h3>
         </a>
       </div>
-      {/* <a className="sidebar btn btn-primary">Create Post</a> */}
+      <a className="sidebar btn btn-primary">Create Post</a>
     </div>
   );
 };

@@ -4,33 +4,36 @@ import { Maincontent } from "./components/main/Maincontent";
 import { Navbar } from "./components/navbar/Navbar";
 import { Rightside } from "./components/rightside/Rightside";
 import users from "./assets/json/users.json";
-// import post from "./assets/json/post.json";
+import posts from "./assets/json/posts.json";
+import storiesJson from "./assets/json/stories.json";
+import { PostData, StoryData, UserData } from "../model";
+
+const currentUser: UserData = users[5];
+const usersData: UserData[] = users;
+const postDatas: PostData[] = posts;
+const stories: StoryData[] = storiesJson;
 
 const App: React.FC = () => {
-  interface UsersData {
-    userId: number;
-    userName: string;
-    userImg: string;
-    isOnline: boolean;
-  }
-
-  const user: UsersData = users[0];
-
   return (
     <>
       <header>
-        <Header user={user} />
+        <Header user={currentUser} />
       </header>
       <main>
         <div className="container">
           <div className="navbar">
-            <Navbar user={user} />
+            <Navbar user={currentUser} />
           </div>
           <div className="main-content">
-            <Maincontent user={user} />
+            <Maincontent
+              user={currentUser}
+              postDatas={postDatas}
+              usersData={usersData}
+              storiesData={stories}
+            />
           </div>
           <div className="right-side">
-            <Rightside user={user} />
+            <Rightside />
           </div>
         </div>
       </main>
